@@ -14,8 +14,7 @@ RUN chmod +x word_of_the_day.zsh
 
 # Add a cron job file
 # This will run the script every day at 12:00
-RUN echo "0 12 * * * /app/word_of_the_day.zsh >> /var/log/word_of_the_day.log 2>&1" > /etc/cron.d/word_of_the_day
-
+RUN echo "28 18 * * * /app/word_of_the_day.zsh >> /var/log/word_of_the_day.log 2>&1" > /etc/cron.d/word_of_the_day
 # Give cron permission to run
 RUN chmod 0644 /etc/cron.d/word_of_the_day
 
