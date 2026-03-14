@@ -1,5 +1,5 @@
 #!/bin/bash
-source .env
+source /etc/environment
 
 url="https://www.merriam-webster.com/word-of-the-day"
 webhook_url="$DISCORD_WEBHOOK_URL"
