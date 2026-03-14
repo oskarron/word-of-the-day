@@ -2,8 +2,10 @@
 
 ## How to run
 
-`docker build -t wotd .`
-`docker run -e DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/{myKey} wotd`
+``` bash
+docker build -t wotd .
+docker run -e DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/{myKey} wotd
+```
 
 ## Utilities
 
